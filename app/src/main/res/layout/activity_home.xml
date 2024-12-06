@@ -1,0 +1,195 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#051322"
+    android:padding="16dp"
+    tools:context=".HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp">
+
+        <!-- Banner Section -->
+
+        <!-- Grid Layout for Navigation Buttons -->
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="88dp"
+            android:layout_height="73dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/applogo" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="392dp"
+            android:layout_height="249dp"
+            android:layout_marginBottom="26dp"
+            android:contentDescription="App Banner"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bannerd"
+            app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/grid_background"
+            android:elevation="6dp"
+            android:padding="16dp"
+            app:alignmentMode="alignMargins"
+            app:columnCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <!-- Search Movies -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#051322"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="12dp"
+                app:layout_columnWeight="1">
+
+                <Button
+                    android:id="@+id/searchMoviesButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="139dp"
+                    android:backgroundTint="#d4a53f"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="Search Movies"
+                    android:textStyle="bold"
+                    android:textColor="#051322"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Top Rated Movies -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#051322"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="12dp"
+                app:layout_columnWeight="1">
+
+                <Button
+                    android:id="@+id/topRatedMoviesButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="139dp"
+                    android:backgroundTint="#d4a53f"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="Top Rated"
+                    android:textStyle="bold"
+                    android:textColor="#051322"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Trending Movies -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#051322"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="12dp"
+                app:layout_columnWeight="1">
+
+                <Button
+                    android:id="@+id/trendingMoviesButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="141dp"
+                    android:backgroundTint="#d4a53f"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="Trending"
+                    android:textStyle="bold"
+                    android:textColor="#051322"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Favorites -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="#051322"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="12dp"
+                app:layout_columnWeight="1">
+
+                <Button
+                    android:id="@+id/favoritesButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="138dp"
+                    android:backgroundTint="#d4a53f"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="Favorites"
+                    android:textStyle="bold"
+                    android:textColor="#051322"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="70dp"
+            android:layout_height="68dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="Settings"
+            app:layout_column="5"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/ic_settings" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movie Mania"
+            android:textColor="#d4a53f"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.68"
+            app:layout_constraintStart_toEndOf="@+id/settingsButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.484" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

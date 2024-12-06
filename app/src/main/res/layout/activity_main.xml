@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#051322">
+
+    <!-- Search Input -->
+    <EditText
+        android:id="@+id/searchInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search movies"
+        android:padding="12dp"
+        android:background="@drawable/rounded_bg"
+        android:textColor="#051322"
+        android:textSize="16sp" />
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#d4a53f"
+        android:textColor="#051322"
+        android:textStyle="bold" />
+
+    <!-- Top Rated Movies Button -->
+    <Button
+        android:id="@+id/topRatedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top Rated Movies"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2e3b50"
+        android:textColor="#e7cc97"
+        android:textStyle="bold" />
+
+    <!-- Movies List -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:divider="#78808d"
+        android:dividerHeight="1dp"
+        android:background="#051322" />
+</LinearLayout>

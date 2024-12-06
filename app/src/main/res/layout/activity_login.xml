@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#051322">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="32dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/applogo"
+            android:contentDescription="App Logo"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Card for Login -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:elevation="4dp"
+            android:padding="24dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="32dp">
+
+            <!-- Welcome Text -->
+            <TextView
+                android:id="@+id/welcomeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back!"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#d4a53f"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/subtitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login to continue"
+                android:textSize="16sp"
+                android:textColor="#bbc2c9"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Username Field -->
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username or Email"
+                android:padding="14dp"
+                android:background="@drawable/rounded_bg"
+                android:textColor="#051322"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Password Field -->
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                android:background="@drawable/rounded_bg"
+
+                android:textColor="#051322"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:backgroundTint="#d4a53f"
+                android:textColor="#051322"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Forgot Password -->
+            <TextView
+                android:id="@+id/forgotPasswordTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:textColor="#e7cc97"
+                android:textSize="14sp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <!-- Register Text -->
+        <TextView
+            android:id="@+id/registerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Register now"
+            android:textColor="#bbc2c9"
+            android:textSize="14sp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</ScrollView>
